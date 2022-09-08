@@ -1,7 +1,7 @@
 <section id="setting-php" style="padding: 10px;">
 <h2>Setting <code>php.dockerfile</code></h2>
 <p>Its time to we build our PHP container with xdebug, composer and configs inside a Dockerfile. Create the file inside follow path: <code>/environmentProject/php.dockerfile</code></p>
-<p>Inside the file we'll set our PHP 7.4 FPM version. To use it we need a tag that we can find on dockerhub. With tag in hands, our first line should be:</p>
+<p>Inside the file we'll set our PHP 8.0 FPM version. To use it we need a tag that we can find on dockerhub. With tag in hands, our first line should be:</p>
 <pre>
 FROM php:8.0-apache
 </pre>
@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable pdo_mysql
 </pre>
 <blockquote>
-Some extensions come by default. It depends on the PHP version you are using. Run <code>docker run --rm php:7.4-fpm php -m</code> in the your terminar to see full extension list.
+Some extensions come by default. It depends on the PHP version you are using. Run <code>docker run --rm php:8.0-fpm php -m</code> in the your terminar to see full extension list.
 </blockquote>
 <br>
 <h3><a href="https://pecl.php.net/">PECL</a> extensions:</h3>
