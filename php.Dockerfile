@@ -25,3 +25,6 @@ RUN echo 'date.timezone="America/Sao_Paulo"' >> /usr/local/etc/php/conf.d/date.i
     && echo 'opcache.validate_timestamps=1' >> /usr/local/etc/php/conf.d/opcache.conf \
     && echo 'opcache.fast_shutdown=1' >> /usr/local/etc/php/conf.d/opcache
     
+# Enable Apache2 modules
+RUN a2enmod rewrite
+    
