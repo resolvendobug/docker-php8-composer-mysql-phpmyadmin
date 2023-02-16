@@ -27,6 +27,7 @@ Some extensions come by default. It depends on the PHP version you are using. Ru
 <h3><a href="https://pecl.php.net/">PECL</a> extensions:</h3>
 <p>Its time to bring some extensions for performance and utility, to it we'll use PECL, a PHP extension repository.<br>
 Here we'll install <code>xdebug</code>, <code>libmencached</code> and <code>zlib1g</code>. Lets add some more lines in our dockerfile:</p>
+<code>docker-compose up -d</code>
 <pre>
 RUN pecl install xdebug-3.0.4 \
     && docker-php-ext-enable xdebug
