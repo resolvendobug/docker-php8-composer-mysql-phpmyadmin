@@ -1,5 +1,6 @@
 <section id="setting-php" style="padding: 10px;">
 <h2>Setting <code>php.dockerfile</code></h2>
+<code>docker-compose up -d</code>
 <p>Its time to we build our PHP container with xdebug, composer and configs inside a Dockerfile. Create the file inside follow path: <code>/environmentProject/php.dockerfile</code></p>
 <p>Inside the file we'll set our PHP 8.0 FPM version. To use it we need a tag that we can find on dockerhub. With tag in hands, our first line should be:</p>
 <pre>
